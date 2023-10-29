@@ -4,13 +4,6 @@
   <img src="https://graph.org/file/9d75bfb77e17b80b3da5b.png" alt="Inflex Music Logo" width="640" height="360">
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/github/stars/TeamInflex/InflexMusicBot?style=for-the-badge&color=blue" alt="GitHub Stars">
-  <img src="https://img.shields.io/github/forks/TeamInflex/InflexMusicBot?style=for-the-badge&color=blue" alt="GitHub Forks">
-  <img src="https://img.shields.io/github/issues/TeamInflex/InflexMusicBot?style=for-the-badge&color=red" alt="GitHub Issues">
-  <img src="https://img.shields.io/github/license/TeamInflex/InflexMusicBot?style=for-the-badge&color=green" alt="GitHub License">
-</p>
-
 <h2 align="center">Delivering Superior Music Experience To Telegram</h2>
 
 ---
