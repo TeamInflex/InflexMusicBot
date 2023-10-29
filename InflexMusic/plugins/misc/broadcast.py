@@ -27,9 +27,9 @@ async def braodcast_message(client, message, _):
 
     if "-wfchat" in message.text or "-wfuser" in message.text:
         if not message.reply_to_message or not (message.reply_to_message.photo or message.reply_to_message.text):
-            return await message.reply_text("Please Reply To A Text Or Image Message For Broadcasting.")
+            return await message.reply_text("<b>𝖤𝗑𝖺𝗆𝗉𝗅𝖾 :</b>\n\n/broadcast [ 𝖬𝖾𝗌𝗌𝖺𝗀𝖾 𝖮𝗋 𝖱𝖾𝗉𝗅𝗒 𝖳𝗈 𝖠 𝖬𝖾𝗌𝗌𝖺𝗀𝖾 ]")
 
-        # Extract data from the replied message
+        # Extract Data From The Replied Message
         if message.reply_to_message.photo:
             content_type = 'photo'
             file_id = message.reply_to_message.photo.file_id
@@ -59,7 +59,7 @@ async def braodcast_message(client, message, _):
                     await asyncio.sleep(fw.x)
                 except:
                     continue
-            await message.reply_text(f"Broadcast To Chats Completed ! Sent To {sent_chats} Chats.")
+            await message.reply_text(f"» 𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍𝖾𝖽 𝖬𝖾𝗌𝗌𝖺𝗀𝖾𝗌 𝖳𝗈 {sent_chats}  𝖢𝗁𝖺𝗍𝗌 .")
 
         if "-wfuser" in message.text:
             # Broadcasting to users
@@ -77,7 +77,7 @@ async def braodcast_message(client, message, _):
                     await asyncio.sleep(fw.x)
                 except:
                     continue
-            await message.reply_text(f"Broadcast To Users Completed ! Sent To {sent_users} Users.")
+            await message.reply_text(f"» 𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍𝖾𝖽 𝖬𝖾𝗌𝗌𝖺𝗀𝖾𝗌 𝖳𝗈 {sent_users} 𝖴𝗌𝖾𝗋𝗌 .")
 
         IS_BROADCASTING = False
         return
