@@ -75,11 +75,8 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.one.join_chat("InflexUpdates")
-                await self.one.join_chat("InflexSupport")
                 await self.one.join_chat("TeamInflex")
-                await self.one.join_chat("InflexStatus")
-                await self.one.join_chat("InflexBots")
+                await self.one.join_chat("InflexSupport")
             except:
                 pass
             assistants.append(2)
