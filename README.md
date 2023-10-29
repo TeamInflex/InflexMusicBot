@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/stars/TeamInflex/InflexMusicBot?style=for-the-badge&color=blue" alt="GitHub Stars">
+  <img src="https://img.shields.io/github/stars/Team/InflexMusicBot?style=for-the-badge&color=blue" alt="GitHub Stars">
   <img src="https://img.shields.io/github/forks/TeamInflex/InflexMusicBot?style=for-the-badge&color=blue" alt="GitHub Forks">
   <img src="https://img.shields.io/github/issues/TeamInflex/InflexMusicBot?style=for-the-badge&color=red" alt="GitHub Issues">
   <img src="https://img.shields.io/github/license/TeamInflex/InflexMusicBot?style=for-the-badge&color=green" alt="GitHub License">
