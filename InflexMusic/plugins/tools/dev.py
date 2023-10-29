@@ -29,20 +29,20 @@ async def edit_or_reply(msg: Message, **kwargs):
 
 
 @app.on_edited_message(
-    filters.command("inflex")
+    filters.command("eval")
     & filters.user(OWNER_ID)
     & ~filters.forwarded
     & ~filters.via_bot
 )
 @app.on_message(
-    filters.command("inflex")
+    filters.command("eval")
     & filters.user(OWNER_ID)
     & ~filters.forwarded
     & ~filters.via_bot
 )
 async def executor(client: app, message: Message):
     if len(message.command) < 2:
-        return await edit_or_reply(message, text="<b>ᴡʜᴀᴛ ʏᴏᴜ ᴡᴀɴɴᴀ ᴇxᴇᴄᴜᴛᴇ ʙᴀʙʏ ?</b>")
+        return await edit_or_reply(message, text="<b>𝖶𝗁𝖺𝗍 𝖸𝗈𝗎 𝖶𝖺𝗇𝗇𝖺 𝖤𝗑𝖾𝖼𝗎𝗍𝖾 𝖡𝖺𝖻𝗒 ?</b>")
     try:
         cmd = message.text.split(" ", maxsplit=1)[1]
     except IndexError:
@@ -127,7 +127,7 @@ async def forceclose_command(_, CallbackQuery):
     if CallbackQuery.from_user.id != int(user_id):
         try:
             return await CallbackQuery.answer(
-                "» ɪᴛ'ʟʟ ʙᴇ ʙᴇᴛᴛᴇʀ ɪғ ʏᴏᴜ sᴛᴀʏ ɪɴ ʏᴏᴜʀ ʟɪᴍɪᴛs ʙᴀʙʏ.", show_alert=True
+                "> 𝖨𝗍 𝖶𝗂𝗅𝗅 𝖡𝖾 𝖡𝖾𝗍𝗍𝖾𝗋 𝖨𝖿 𝖸𝗈𝗎 𝖲𝗍𝖺𝗒 𝖨𝗇 𝖸𝗈𝗎𝗋 𝖫𝗂𝗆𝗂𝗍𝗌 .", show_alert=True
             )
         except:
             return
@@ -152,7 +152,7 @@ async def forceclose_command(_, CallbackQuery):
 )
 async def shellrunner(_, message: Message):
     if len(message.command) < 2:
-        return await edit_or_reply(message, text="<b>ᴇxᴀᴍᴩʟᴇ :</b>\n/sh git pull")
+        return await edit_or_reply(message, text="<b>Example :</b>\n/sh git pull")
     text = message.text.split(None, 1)[1]
     if "\n" in text:
         code = text.split("\n")
