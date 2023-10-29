@@ -15,7 +15,7 @@ from InflexMusic.utils.database import (
 
 @app.on_message(filters.command(["activevc", "activevoice", "voice", "ac"]) & SUDOERS)
 async def activevc(_, message: Message):
-    mystic = await message.reply_text("» ɢᴇᴛᴛɪɴɢ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs ʟɪsᴛ...")
+    mystic = await message.reply_text("» 𝖦𝖾𝗍𝗍𝗂𝗇𝗀 𝖠𝖼𝗍𝗂𝗏𝖾-𝖵𝗈𝗂𝖼𝖾 𝖢𝗁𝖺𝗍𝗌 𝖫𝗂𝗌𝗍 ...")
     served_chats = await get_active_chats()
     text = ""
     j = 0
@@ -37,17 +37,17 @@ async def activevc(_, message: Message):
         except:
             continue
     if not text:
-        await mystic.edit_text(f"» ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs ᴏɴ {app.mention}.")
+        await mystic.edit_text(f"» 𝖭𝗈 𝖠𝖼𝗍𝗂𝗏𝖾-𝖵𝗈𝗂𝖼𝖾 𝖢𝗁𝖺𝗍𝗌 𝖮𝗇 {app.mention}.")
     else:
         await mystic.edit_text(
-            f"<b>» ʟɪsᴛ ᴏғ ᴄᴜʀʀᴇɴᴛʟʏ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs :</b>\n\n{text}",
+            f"<b>» 𝖫𝗂𝗌𝗍 𝖮𝖿 𝖢𝗎𝗋𝗋𝖾𝗇𝗍 𝖠𝖼𝗍𝗂𝗏𝖾-𝖵𝗈𝗂𝖼𝖾 𝖢𝗁𝖺𝗍𝗌 :</b>\n\n{text}",
             disable_web_page_preview=True,
         )
 
 
 @app.on_message(filters.command(["activev", "activevideo", "video"]) & filters.user(OWNER_ID))
 async def activevi_(_, message: Message):
-    mystic = await message.reply_text("» ɢᴇᴛᴛɪɴɢ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛs ʟɪsᴛ...")
+    mystic = await message.reply_text("» 𝖦𝖾𝗍𝗍𝗂𝗇𝗀 𝖠𝖼𝗍𝗂𝗏𝖾-𝖵𝗂𝖽𝖾𝗈 𝖢𝗁𝖺𝗍𝗌 𝖫𝗂𝗌𝗍 ...")
     served_chats = await get_active_video_chats()
     text = ""
     j = 0
@@ -69,9 +69,9 @@ async def activevi_(_, message: Message):
         except:
             continue
     if not text:
-        await mystic.edit_text(f"» ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛs ᴏɴ {app.mention}.")
+        await mystic.edit_text(f"» 𝖭𝗈 𝖠𝖼𝗍𝗂𝗏𝖾-𝖵𝗂𝖽𝖾𝗈 𝖢𝗁𝖺𝗍𝗌 𝖮𝗇 {app.mention}.")
     else:
         await mystic.edit_text(
-            f"<b>» ʟɪsᴛ ᴏғ ᴄᴜʀʀᴇɴᴛʟʏ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛs :</b>\n\n{text}",
+            f"<b>» 𝖫𝗂𝗌𝗍 𝖮𝖿 𝖢𝗎𝗋𝗋𝖾𝗇𝗍 𝖠𝖼𝗍𝗂𝗏𝖾-𝖵𝗂𝖽𝖾𝗈 𝖢𝗁𝖺𝗍𝗌 :</b>\n\n{text}",
             disable_web_page_preview=True,
         )
