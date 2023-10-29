@@ -65,7 +65,7 @@ async def update_(client, message, _):
         "tsnrhtdd"[(format // 10 % 10 != 1) * (format % 10 < 4) * format % 10 :: 4],
     )
     for info in repo.iter_commits(f"HEAD..origin/{config.UPSTREAM_BRANCH}"):
-        updates += f"<b>➣ #{info.count()}: <a href={REPO_}/commit/{info}>{info.summary}</a> ʙʏ -> {info.author}</b>\n\t\t\t\t<b>➥ 𝖢𝗈𝗆𝗆𝗂𝗍𝗍𝖾𝖽 𝖮𝗇 :</b> {ordinal(int(datetime.fromtimestamp(info.committed_date).strftime('%d')))} {datetime.fromtimestamp(info.committed_date).strftime('%b')}, {datetime.fromtimestamp(info.committed_date).strftime('%Y')}\n\n"
+        updates += f"<b>➣ #{info.count()}: <a href={REPO_}/commit/{info}>{info.summary}</a> 𝖡𝗒 -> {info.author}</b>\n\t\t\t\t<b>➥ 𝖢𝗈𝗆𝗆𝗂𝗍𝗍𝖾𝖽 𝖮𝗇 :</b> {ordinal(int(datetime.fromtimestamp(info.committed_date).strftime('%d')))} {datetime.fromtimestamp(info.committed_date).strftime('%b')}, {datetime.fromtimestamp(info.committed_date).strftime('%Y')}\n\n"
     _update_response_ = "<b>𝖠 𝖭𝖾𝗐 𝖴𝗉𝖽𝖺𝗍𝖾 𝖨𝗌 𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝖥𝗈𝗋 𝖳𝗁𝖾 𝖡𝗈𝗍 !</b>\n\n➣ 𝖯𝗎𝗌𝗁𝗂𝗇𝗀 𝖴𝗉𝖽𝖺𝗍𝖾𝗌 𝖭𝗈𝗐\n\n<b><u>𝖴𝗉𝖽𝖺𝗍𝖾𝗌 :</u></b>\n\n"
     _final_updates_ = _update_response_ + updates
     if len(_final_updates_) > 4096:
