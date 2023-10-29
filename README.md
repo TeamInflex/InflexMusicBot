@@ -4,6 +4,15 @@
   <img src="https://graph.org/file/9d75bfb77e17b80b3da5b.png" alt="Inflex Music Logo" width="640" height="360">
 </p>
 
+<p align="center">
+<a href="https://github.com/TeamInflex/InflexMusicBot/stargazers"><img src="https://img.shields.io/github/stars/TeamInflex/InflexMusicBot?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
+<a href="https://github.com/TeamInflex/InflexMusicBot/network/members"> <img src="https://img.shields.io/github/forks/TeamInflex/InflexMusicBot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/TeamInflex/InflexMusicBot/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
+<a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>
+<a href="https://github.com/TeamInflex/InflexMusicBot/commits/TeamInflex"> <img src="https://img.shields.io/github/last-commit/TeamInflex/InflexMusicBot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
+</p>
+
+
 <h2 align="center">Delivering Superior Music Experience To Telegram</h2>
 
 ---
