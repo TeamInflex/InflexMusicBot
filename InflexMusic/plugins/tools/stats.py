@@ -1,4 +1,5 @@
 import platform
+import random
 from sys import version as pyver
 
 import psutil
@@ -9,6 +10,7 @@ from pyrogram.types import InputMediaPhoto, Message
 from pytgcalls.__version__ import __version__ as pytgver
 
 import config
+from config import STATS_IMG_URL
 from InflexMusic import app
 from InflexMusic.core.userbot import assistants
 from InflexMusic.misc import SUDOERS, mongodb
@@ -25,7 +27,7 @@ from config import OWNER_ID
 async def stats_global(client, message: Message, _):
     upl = stats_buttons(_, True if message.from_user.id in SUDOERS else False)
     await message.reply_photo(
-        photo=config.STATS_IMG_URL,
+        photo=random.choice(STATS_IMG_URL),
         caption=_["gstats_2"].format(app.mention),
         reply_markup=upl,
     )
@@ -64,12 +66,12 @@ async def overall_stats(client, CallbackQuery, _):
         config.AUTO_LEAVING_ASSISTANT,
         config.DURATION_LIMIT_MIN,
     )
-    med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
+    med = InputMediaPhoto(media=random.choice(STATS_IMG_URL), caption=text)
     try:
         await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
     except MessageIdInvalid:
         await CallbackQuery.message.reply_photo(
-            photo=config.STATS_IMG_URL, caption=text, reply_markup=upl
+            photo=random.choice(STATS_IMG_URL), caption=text, reply_markup=upl
         )
 
 
@@ -94,7 +96,7 @@ async def bot_stats(client, CallbackQuery, _):
         else:
             cpu_freq = f"{round(cpu_freq, 2)}ᴍʜᴢ"
     except:
-        cpu_freq = "ғᴀɪʟᴇᴅ ᴛᴏ ғᴇᴛᴄʜ"
+        cpu_freq = "𝖥𝖺𝗂𝗅𝖾𝖽 𝖳𝗈 𝖥𝖾𝗍𝖼𝗁"
     hdd = psutil.disk_usage("/")
     total = hdd.total / (1024.0**3)
     used = hdd.used / (1024.0**3)
@@ -127,10 +129,10 @@ async def bot_stats(client, CallbackQuery, _):
         call["collections"],
         call["objects"],
     )
-    med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
+    med = InputMediaPhoto(media=random.choice(STATS_IMG_URL), caption=text)
     try:
         await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
     except MessageIdInvalid:
         await CallbackQuery.message.reply_photo(
-            photo=config.STATS_IMG_URL, caption=text, reply_markup=upl
+            photo=random.choice(STATS_IMG_URL), caption=text, reply_markup=upl
         )
