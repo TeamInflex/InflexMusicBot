@@ -1,4 +1,5 @@
 from datetime import datetime
+import random
 
 from pyrogram import filters
 from pyrogram.types import Message
@@ -16,7 +17,7 @@ from config import BANNED_USERS, PING_IMG_URL
 async def ping_com(client, message: Message, _):
     start = datetime.now()
     response = await message.reply_photo(
-        photo=PING_IMG_URL,
+        photo=random.choice(PING_IMG_URL),
         caption=_["ping_1"].format(app.mention),
     )
     pytgping = await Inflex.ping()
