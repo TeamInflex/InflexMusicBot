@@ -108,7 +108,7 @@ For A Full List Of Commands, Use `/help` in [Telegram](https://t.me/InflexMusicB
 Stay Updated With The Latest Features And Improvements To Inflex Music Bot:
 
 <p align="center">
-  <a href="https://telegram.me/InflexSupport">
+  <a href="https://telegram.me/sparkles_telugu">
     <img src="https://img.shields.io/badge/Join-Support%20Group-blue?style=for-the-badge&logo=telegram">
   </a>
   <a href="https://telegram.me/TeamInflex">
